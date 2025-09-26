@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Controle - Cursos Online</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="50" tabindex="0">
+
+  <!-- Navbar fixa -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Painel Cursos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Offcanvas Menu -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#cursos" class="nav-link">Cursos</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Carousel -->
+  <section id="home" class="mt-5 pt-4">
+    <div id="carouselCursos" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.ytimg.com/vi/WHaeQ2gVYrk/maxresdefault.jpg" class="d-block w-100" alt="Curso 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ytimg.com/vi/bLEzKWJYba4/maxresdefault.jpg" class="d-block w-100" alt="Curso 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ytimg.com/vi/voR7UUNUUOY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCNpWM_5cRkH_WaUlbMKoQFBJgQXw" class="d-block w-100" alt="Curso 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCursos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselCursos" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Seção Cursos -->
+  <section id="cursos" class="container my-5">
+    <h2 class="mb-4">Cursos Disponíveis</h2>
+
+    <!-- Dropdown filtro -->
+    <div class="dropdown mb-3">
+      <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Filtrar Cursos</button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Curso</a></li>
+        <li><a class="dropdown-item" href="#">Curso</a></li>
+        <li><a class="dropdown-item" href="#">Curso</a></li>
+      </ul>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress mb-4">
+      <div class="progress-bar" style="width: 60%;">60%</div>
+    </div>
+
+    <!-- Cards -->
+    <div class="row g-4">
+      <div class="col-md-3 d-flex">
+        <div class="card flex-fill">
+          <img src="https://i.pinimg.com/236x/52/cd/95/52cd95d6c3b56977cf2efc20f6169405.jpg" class="card-img-top" alt="Curso">
+          <div class="card-body">
+            <h5 class="card-title">Curso</h5>
+            <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#detalhes1">Detalhes</button>
+            <div class="collapse mt-2" id="detalhes1">
+              <p class="card-text">Curso.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex">
+        <div class="card flex-fill">
+          <img src="https://preview.redd.it/mandem-seus-memes-sobre-o-curso-v0-lycvqpodo4pe1.png?width=1080&auto=webp&s=c6b6aed8070deee3d4840477ae56a59a0fc47bdb" class="card-img-top" alt="Curso">
+          <div class="card-body">
+            <h5 class="card-title">Curso</h5>
+            <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#detalhes2">Detalhes</button>
+            <div class="collapse mt-2" id="detalhes2">
+              <p class="card-text">Curso.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex">
+        <div class="card flex-fill">
+          <img src="https://i.pinimg.com/474x/4c/93/99/4c939932bf623976d7a53d1e458741d6.jpg" class="card-img-top" alt="Curso">
+          <div class="card-body">
+            <h5 class="card-title">Curso</h5>
+            <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#detalhes3">Detalhes</button>
+            <div class="collapse mt-2" id="detalhes3">
+              <p class="card-text">Curso.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 d-flex">
+        <div class="card flex-fill">
+          <img src="https://pt.quizur.com/_image?href=https://dev-beta.quizur.com/storage/v1/object/public//imagens//20126238/68081e10-4bbb-4b86-9111-776c8b7ba3a7.png&w=600&h=600&f=webp" class="card-img-top" alt="Curso">
+          <div class="card-body">
+            <h5 class="card-title">Curso</h5>
+            <button class="btn btn-info" data-bs-toggle="collapse" data-bs-target="#detalhes4">Detalhes</button>
+            <div class="collapse mt-2" id="detalhes4">
+              <p class="card-text">Curso.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+    <!-- Paginação -->
+    <nav class="mt-4">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- Botão Modal -->
+  <div class="container text-center my-5">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCurso">
+      Adicionar Curso
+    </button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalCurso" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form class="needs-validation" novalidate>
+          <div class="modal-header">
+            <h5 class="modal-title">Novo Curso</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="nomeCurso" placeholder="Nome" required>
+              <label for="nomeCurso">Nome do Curso</label>
+              <div class="invalid-feedback">Informe o nome do curso.</div>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">R$</span>
+              <input type="number" class="form-control" placeholder="Preço">
+            </div>
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="ativo">
+              <label class="form-check-label" for="ativo">Curso Ativo</label>
+            </div>
+            <div class="form-floating mb-3">
+              <select class="form-select" id="tipoCurso">
+                <option value="1">Bacharelado</option>
+                <option value="2">Tecnólogo</option>
+                <option value="3">Livre</option>
+              </select>
+              <label for="tipoCurso">Tipo</label>
+            </div>
+            <label for="anos" class="form-label">Anos para completar</label>
+            <input type="range" class="form-range" min="1" max="10" id="anos" oninput="this.nextElementSibling.value = this.value">
+            <output>5</output> anos
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alert -->
+  <div class="container my-3">
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      Curso adicionado com sucesso!
+      <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+  </div>
+
+    <!-- Toast -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Sistema</strong>
+        <small>Agora</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        Curso salvo com sucesso!
+      </div>
+    </div>
+  </div>
+
+  <!-- Popover com imagem -->
+  <div class="container text-center my-5">
+    <button type="button" class="btn btn-danger" 
+            data-bs-toggle="popover" 
+            title="Faltar no curso" 
+            data-bs-html="true"
+            data-bs-content="<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR92yHMbs79cxs71NOqCaQ7xK6rnurJIPtyJg&s' class='img-fluid'><br>Por que você faltou no curso? :(">
+      Faltar no curso
+    </button>
+  </div>
+
+  <!-- Seção Contato -->
+  <section id="contato" class="container my-5">
+    <h2>Contato</h2>
+    <p>Entre em contato conosco pelo e-mail: Ocurso@curso.com</p>
+  </section>
+
+  <!-- Spinner (simulação de carregamento) -->
+  <div class="text-center my-5">
+    <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Carregando...</span>
+    </div>
+  </div>
+
+  <!-- Scripts Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script para ativar popover e toast -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Ativar popovers
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+      popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+      })
+
+      // Exibir toast automaticamente
+      var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+      toastElList.map(function (toastEl) {
+        var toast = new bootstrap.Toast(toastEl)
+        toast.show()
+      })
+
+      // Validação de formulário
+      var forms = document.querySelectorAll('.needs-validation')
+      Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })
+  </script>
+</body>
+</html>

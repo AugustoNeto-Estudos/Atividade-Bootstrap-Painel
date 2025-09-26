@@ -1,0 +1,20 @@
+/* Carousel */
+#carouselCursos img {
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Cards */
+.card {
+  min-height: 350px;
+}
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Popover botão vermelho */
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+}
